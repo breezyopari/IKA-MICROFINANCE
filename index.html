@@ -68,9 +68,10 @@
                 <p id="authSubtitle" class="text-slate-500 text-xs mt-1">Ingiza taarifa zako za Afisa kuendelea</p>
             </div>
 
+            <!-- LOGIN FORM -->
             <form id="userLoginForm" onsubmit="handleUserLogin(event)" class="space-y-4">
                 <div>
-                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Username</label>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Username au Email</label>
                     <input type="text" id="loginUser" required class="w-full px-4 py-3 rounded-xl border border-slate-200 outline-none text-sm bg-slate-50 focus:bg-white">
                 </div>
                 <div>
@@ -80,13 +81,14 @@
                 <button type="submit" class="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg transition text-sm">Ingia</button>
             </form>
 
+            <!-- REGISTER FORM -->
             <form id="userRegisterForm" onsubmit="handleUserRegister(event)" class="space-y-4 hidden">
                 <div>
                     <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Jina Kamili</label>
                     <input type="text" id="regFullName" required class="w-full px-4 py-3 rounded-xl border border-slate-200 outline-none text-sm bg-slate-50">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Username</label>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Username au Email</label>
                     <input type="text" id="regUser" required class="w-full px-4 py-3 rounded-xl border border-slate-200 outline-none text-sm bg-slate-50">
                 </div>
                 <div>
@@ -237,10 +239,10 @@
         </nav>
     </div>
 
-    <!-- FIREBASE SDK ENGINE (COMPAT MODE) -->
+    <!-- FIREBASE SDK ENGINE (COMPAT MODE FOR REALTIME DATABASE & AUTH) -->
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
 
     <!-- SCRIPT ENGINE -->
     <script src="app.js"></script>
